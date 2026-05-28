@@ -210,6 +210,9 @@ function takeCommand(voice_cmd) {
           speak("opening steam..")
           window.open("steam://")
         }
+         else if( voice_cmd.includes("jarvis open dev mode")){
+            window.open("https://chatgpt.com/") && window.open("https://claude.ai/") && window.open("https://github.com/suman-das07") && window.open("vscode://")
+        }
         else if(
             voice_cmd.includes("time")
         ){
