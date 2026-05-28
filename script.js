@@ -212,21 +212,10 @@ function takeCommand(voice_cmd) {
         }
          else if( voice_cmd.includes("open developer mode")){
             speak("switching dev mode")
-            setTimeout(() => {
-        window.open("https://chatgpt.com/", "_blank");
-    }, 500);
-
-    setTimeout(() => {
-        window.open("https://claude.ai/", "_blank");
-    }, 1000);
-
-    setTimeout(() => {
-        window.open("https://github.com/suman-das07", "_blank");
-    }, 1500);
-
-    setTimeout(() => {
-        window.open("vscode://", "_blank");
-    }, 2000);
+            window.open("https://chatgpt.com/", "_blank");
+    window.open("https://claude.ai/", "_blank");
+    window.open("https://github.com/suman-das07", "_blank");
+    window.open("vscode://", "_blank");
         }
         else if(
             voice_cmd.includes("time")
