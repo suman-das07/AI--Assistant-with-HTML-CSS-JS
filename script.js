@@ -212,7 +212,7 @@ function takeCommand(voice_cmd) {
         }
          else if( voice_cmd.includes("open developer mode")){
             speak("switching dev mode")
-            window.open("https://chatgpt.com/") && window.open("https://claude.ai/") && window.open("https://github.com/suman-das07") && window.open("vscode://")
+            window.open("https://chatgpt.com/", "https://claude.ai/", "https://github.com/suman-das07", "vscode://");
         }
         else if(
             voice_cmd.includes("time")
