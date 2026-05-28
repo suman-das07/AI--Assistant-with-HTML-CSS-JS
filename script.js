@@ -212,7 +212,21 @@ function takeCommand(voice_cmd) {
         }
          else if( voice_cmd.includes("open developer mode")){
             speak("switching dev mode")
-            window.open("https://chatgpt.com/", "https://claude.ai/", "https://github.com/suman-das07", "vscode://");
+            setTimeout(() => {
+        window.open("https://chatgpt.com/", "_blank");
+    }, 500);
+
+    setTimeout(() => {
+        window.open("https://claude.ai/", "_blank");
+    }, 1000);
+
+    setTimeout(() => {
+        window.open("https://github.com/suman-das07", "_blank");
+    }, 1500);
+
+    setTimeout(() => {
+        window.open("vscode://", "_blank");
+    }, 2000);
         }
         else if(
             voice_cmd.includes("time")
